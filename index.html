@@ -109,10 +109,10 @@
                     In occasione del centenario di fondazione dell’<a href="http://www.caiulegenova.it">Unione Ligure Escursionisti</a>, la mostra presenta al pubblico il lavoro di due ex soci ed appassionati fotografi tra loro contemporanei, attivi in un arco di tempo che va dagli anni ’20 agli anni ’40 dello scorso secolo.
                 </p>
                 <p>
-                    <a href="img/foto-ninetto.jpg" data-toggle="lightbox" data-title="Eugenio Molini"><strong>EUGENIO MOLINI</strong></a> ci accompagna alla scoperta dell’escursionismo di altri tempi attraverso i suoi interpreti: gli uomini e la loro fatica, piccole silhouette nere alla scoperta della bellezza alpina sullo sfondo di maestose distese di neve, di ghiaccio, di roccia.
+                    <a href="img/foto-ninetto.jpg" data-toggle="lightbox" data-title="Eugenio Molini (1902-1947)"><strong>EUGENIO MOLINI</strong></a> ci accompagna alla scoperta dell’escursionismo di altri tempi attraverso i suoi interpreti: gli uomini e la loro fatica, piccole silhouette nere alla scoperta della bellezza alpina sullo sfondo di maestose distese di neve, di ghiaccio, di roccia.
                 </p>                    
                 <p>
-                    <strong>UMBERTO SAUKKONEN</strong> ci regala invece prospettive sorprendenti delle vere protagoniste di questo racconto: grazie alle sue eccezionali fotografie stereoscopiche possiamo ammirare le montagne nella loro concretezza, comprendere la mole dei loro chiaroscuri, sfiorare con gli occhi la trama rocciosa delle loro grandiose pareti.
+                    <a href="img/foto-saukkonen.jpg" data-toggle="lightbox" data-title="Umberto Saukkonen"><strong>UMBERTO SAUKKONEN</strong></a> ci regala invece prospettive sorprendenti delle vere protagoniste di questo racconto: grazie alle sue eccezionali fotografie stereoscopiche possiamo ammirare le montagne nella loro concretezza, comprendere la mole dei loro chiaroscuri, sfiorare con gli occhi la trama rocciosa delle loro grandiose pareti.
                 </p>
                 <p>   
                     La mostra propone al visitatore una selezione di fotografie che, attraverso la loro autentica bellezza e la loro particolare natura, raccontano storie di luoghi, di persone, di due passioni che corrono insieme: la neve e la roccia, la luce e l’ombra, il bianco ed il nero.
@@ -210,6 +210,12 @@
     </script> 
 
     <script src="js/ekko-lightbox.min.js"></script>
+    <script type="text/javascript">
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        }); 
+    </script>
 
 </body>
 
